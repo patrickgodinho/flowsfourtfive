@@ -1,0 +1,46 @@
+Arguments: 
+  /Users/patrickgodinho/.nvm/versions/node/v8.9.1/bin/node /usr/local/bin/yarn add --dev flow-bin
+
+PATH: 
+  /Users/patrickgodinho/.nvm/versions/node/v8.9.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Applications/Wireshark.app/Contents/MacOS
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  8.9.1
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "flowf",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-preset-flow": "^6.23.0",
+      "flow-bin": "^0.63.1"
+    },
+  
+    "scripts": {
+      "build": "babel src/ -d lib/",
+      "prepublish": "yarn run build"
+    }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Users/patrickgodinho/dev/flowf/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>

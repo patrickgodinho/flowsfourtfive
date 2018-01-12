@@ -1,0 +1,21 @@
+{
+  "name": "flowsfourtfive",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.63.1",
+    "jest": "^22.0.5"
+  },
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0"
+  }
+}
